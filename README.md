@@ -7,6 +7,8 @@ Celem projektu jest implementacja zaawansowanego środowiska symulacyjnego dla a
 Projekt polega na stworzeniu symulatora pojazdu opartego na dynamicznym modelu "rowerowym" (bicycle model) oraz implementacji stochastycznego kontrolera predykcyjnego. W odróżnieniu od klasycznych metod optymalizacji (jak NMPC), MPPI wykorzystuje masywne równoległe próbkowanie trajektorii, co pozwala na efektywne sterowanie w nieliniowych i nietrywialnych reżimach jazdy.  
 Głównym zadaniem jest utrzymanie pojazdu na zadanej ścieżce przy jednoczesnym uwzględnieniu ograniczeń fizycznych, takich jak elipsa tarcia i granice toru.  
 
+
+# Milestones
 # Model Matematyczny (Fundament)
 Wytyczne:
 1. Układ współrzędnych: Współrzędne krzywoliniowe (curvilinear coordinates) względem ścieżki referencyjnej.
