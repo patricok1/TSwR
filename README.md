@@ -9,15 +9,16 @@ Głównym zadaniem jest utrzymanie pojazdu na zadanej ścieżce przy jednoczesny
 
 # Model Matematyczny (Fundament)
 Wytyczne:
-• Układ współrzędnych: Współrzędne krzywoliniowe (curvilinear coordinates) względem ścieżki referencyjnej. 
-• Wektor stanu
-• Ograniczenia: Implementacja elipsy tarcia (friction ellipse) ograniczającej sumaryczne siły działające na koła.
+1. Układ współrzędnych: Współrzędne krzywoliniowe (curvilinear coordinates) względem ścieżki referencyjnej.
+ 
+2. Wektor stanu
+3. Ograniczenia: Implementacja elipsy tarcia (friction ellipse) ograniczającej sumaryczne siły działające na koła.
 
 # Stos technologiczny
-• PyTorch: Wykorzystanie tensorów do równoległego obliczania tysięcy próbek trajektorii na GPU/CPU.
-• pytorch-mppi: Biblioteka implementująca logikę algorytmu Model Predictive Path Integral.
-• Numpy / Scipy: Wsparcie dla obliczeń macierzowych i parametrów modelu.
-• Matplotlib: Wizualizacja toru, pojazdu oraz „chmury” próbek generowanych przez MPPI.
+1. PyTorch: Wykorzystanie tensorów do równoległego obliczania tysięcy próbek trajektorii na GPU/CPU.
+2. pytorch-mppi: Biblioteka implementująca logikę algorytmu Model Predictive Path Integral.
+3. Numpy / Scipy: Wsparcie dla obliczeń macierzowych i parametrów modelu.
+4. Matplotlib: Wizualizacja toru, pojazdu oraz „chmury” próbek generowanych przez MPPI.
 
 # Cel projektu
 1.	Implementacja środowiska: Stworzenie modelu dynamiki pojazdu w oparciu o równania różniczkowe z artykułu.  
@@ -27,15 +28,15 @@ Wytyczne:
 5.	Testy graniczne: Badanie stabilności pojazdu przy dużych przyspieszeniach bocznych (at-limit handling).
 
 # Cel na połowę projektu
-• Działający model matematyczny (bicycle model) zaimplementowany w Pythonie.
-• Prosta wizualizacja toru i pozycji pojazdu.
-• Uruchomienie podstawowej pętli sterowania MPPI pozwalającej na przejechanie prostego odcinka trasy.
+1. Działający model matematyczny (bicycle model) zaimplementowany w Pythonie.
+2. Prosta wizualizacja toru i pozycji pojazdu.
+3. Uruchomienie podstawowej pętli sterowania MPPI pozwalającej na przejechanie prostego odcinka trasy.
 # Planowany rezultat końcowy
 
-• W pełni funkcjonalne środowisko symulacyjne.
-• Kontroler MPPI zdolny do stabilnego prowadzenia auta po złożonym torze wyścigowym.
-• Zestaw eksperymentów pokazujących przewagi MPPI w radzeniu sobie z nieliniowościami modelu opon.
-• Analiza kosztu obliczeniowego i porównanie wyników z założeniami teoretycznymi z artykułu.
+1. W pełni funkcjonalne środowisko symulacyjne.
+2. Kontroler MPPI zdolny do stabilnego prowadzenia auta po złożonym torze wyścigowym.
+3. Zestaw eksperymentów pokazujących przewagi MPPI w radzeniu sobie z nieliniowościami modelu opon.
+4. Analiza kosztu obliczeniowego i porównanie wyników z założeniami teoretycznymi z artykułu.
 # Bibliografia
 1. https://arxiv.org/pdf/2003.04882.pdf
 2.	pytorch-mppi library documentation
