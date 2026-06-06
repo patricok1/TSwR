@@ -12,9 +12,8 @@ Głównym zadaniem jest utrzymanie pojazdu na zadanej ścieżce przy jednoczesny
 # Model Matematyczny (Fundament)
 Wytyczne:
 1. Układ współrzędnych: Współrzędne krzywoliniowe (curvilinear coordinates) względem ścieżki referencyjnej.
- 
 2. Wektor stanu
-3. Ograniczenia: Implementacja elipsy tarcia (friction ellipse) ograniczającej sumaryczne siły działające na koła.
+
 
 # Stos technologiczny
 1. PyTorch: Wykorzystanie tensorów do równoległego obliczania tysięcy próbek trajektorii na GPU/CPU.
